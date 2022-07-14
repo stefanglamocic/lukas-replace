@@ -1,0 +1,9 @@
+.idea/
+/out/
+*.iws
+*.ipr
+*.ids
+*.orig
+*.iml
+bin/
+*.class
