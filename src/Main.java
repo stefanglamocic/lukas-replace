@@ -37,6 +37,7 @@ public class Main {
                 text = reader.lines().collect(Collectors.joining(System.lineSeparator()));
             }catch (Exception e){
                 System.out.println("Greska tokom citanja fajla!");
+                return;
             }
 
             text = text.replaceAll(regex, replacement);
@@ -45,6 +46,7 @@ public class Main {
                 writer.write(text);
             }catch (Exception e){
                 System.out.println("Greska pri upisu u fajl. Provjerite prava pisanja u fajl.");
+                return;
             }
         }
 
