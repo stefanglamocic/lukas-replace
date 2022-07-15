@@ -40,6 +40,9 @@ public class Main {
                 return;
             }
 
+            if(!text.contains(regex))
+                continue;
+            System.out.println("Izmjena u fajlu " + f.getName() + "...");
             text = text.replaceAll(regex, replacement);
 
             try(FileWriter writer = new FileWriter(f)){
